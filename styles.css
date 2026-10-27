@@ -1,0 +1,171 @@
+:root {
+  --navy:#10243B;
+  --teal:#00A5A8;
+  --muted:#536579}
+* {
+  box-sizing:border-box}
+html {
+  scroll-behavior:smooth}
+body {
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  color:#203247;
+  background:#f7f9fb;
+  line-height:1.65}
+a {
+  color:inherit}
+header {
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:10;
+  border-bottom:1px solid #e2e8ef}
+nav {
+  max-width:1150px;
+  margin:auto;
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px}
+nav strong {
+  letter-spacing:.1em}
+nav .links {
+  display:flex;
+  gap:20px;
+  font-size:14px}
+nav a {
+  text-decoration:none}
+nav a:hover {
+  color:var(--teal)}
+.hero {
+  background:linear-gradient(125deg,#10243b,#173c56);
+  color:white;
+  padding:110px 24px 100px}
+.wrap {
+  max-width:1100px;
+  margin:auto}
+.eyebrow {
+  font-size:12px;
+  font-weight:750;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#168f99}
+.hero .eyebrow {
+  color:#66d9d8}
+h1 {
+  font-size:clamp(48px,7vw,88px);
+  line-height:1.05;
+  letter-spacing:-.05em;
+  margin:18px 0}
+.hero p {
+  max-width:720px;
+  font-size:19px;
+  color:#d6e4ed}
+.button {
+  display:inline-block;
+  background:#1ab4b5;
+  color:#062a35;
+  text-decoration:none;
+  padding:13px 22px;
+  border-radius:5px;
+  font-weight:750;
+  margin:18px 12px 0 0}
+.button.alt {
+  background:transparent;
+  color:white;
+  border:1px solid #adc5d4}
+section {
+  padding:85px 24px}
+h2 {
+  font-size:clamp(30px,4vw,45px);
+  line-height:1.2;
+  margin:8px 0 28px;
+  color:var(--navy)}
+.intro {
+  max-width:780px;
+  font-size:18px}
+.project {
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  gap:0;
+  background:white;
+  margin:25px 0;
+  border:1px solid #e0e8ee;
+  box-shadow:0 10px 30px #10243b08}
+.visual {
+  background:linear-gradient(135deg,#dbe6ec,#edf3f6);
+  min-height:320px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  padding:28px;
+  border:1px dashed #9cb5c4;
+  color:#4e6b7d;
+  letter-spacing:.08em;
+  font-weight:700}
+.visual small {
+  display:block;
+  letter-spacing:normal;
+  font-weight:400;
+  margin-top:16px;
+  max-width:330px}
+.copy {
+  padding:40px}
+h3 {
+  font-size:26px;
+  line-height:1.2;
+  margin:12px 0 18px;
+  color:var(--navy)}
+.pill {
+  display:inline-block;
+  background:#e7f7f7;
+  color:#08777b;
+  padding:6px 12px;
+  border-radius:50px;
+  font-size:12px;
+  font-weight:750}
+.columns {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px}
+.panel {
+  background:white;
+  border:1px solid #e0e8ee;
+  padding:26px}
+.panel h3 {
+  font-size:19px}
+footer {
+  background:#10243b;
+  color:white;
+  padding:45px 24px}
+footer a {
+  color:#7de2e0}
+@media(max-width:750px) {
+  nav {
+  flex-direction:column;
+  align-items:flex-start}
+nav .links {
+  flex-wrap:wrap;
+  gap:12px}
+.project,.columns {
+  grid-template-columns:1fr}
+.hero {
+  padding:70px 24px}
+.copy {
+  padding:26px}
+section {
+  padding:55px 20px}
+}
+
+/* Portfolio CAD imagery */
+.visual { overflow:hidden; }
+.visual > img { display:block; width:100%; height:100%; min-height:280px; max-height:420px; object-fit:contain; padding:16px; background:#f7f9fb; }
+.visual > small { display:block; padding:10px 16px; font-size:12px; color:#536579; background:#e6eef2; }
+.image-stack { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:12px; width:100%; }
+.image-stack figure { margin:0; min-width:0; background:#f7f9fb; border-radius:8px; overflow:hidden; }
+.image-stack img { display:block; width:100%; height:230px; object-fit:contain; }
+.image-stack figcaption { font-size:12px; color:#536579; text-align:center; padding:8px; }
+@media(max-width:700px) { .image-stack { grid-template-columns:1fr; } .image-stack img {height:190px;} }
